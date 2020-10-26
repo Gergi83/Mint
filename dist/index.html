@@ -4,10 +4,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mint - PSD to code</title>
+  <meta name="description"
+    content="exercise of converting psd to code with html, css, scss, bem, 7-1 pattern, responsive" />
+  <meta name="keywords" content="psd conversion code html css scss bem 7-1 pattern responsive" />
+  <title>Mint</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 
-<body></body>
+<body>
+  <nav class="nav">
+    <img class="nav__logo" src="../dist/img/logo-black.png" alt="Mint logo" width="90" height="53">
+    <ul class="nav-container">
+      <li class="nav__item"><a href="#portfolio">WORK</a></li>
+      <li class="nav__item"><a href="#about">ABOUT</a></li>
+      <li class="nav__item"><a href="#blog">BLOG</a></li>
+      <li class="nav__item"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <section class="header">
+    <div class="header__text">
+      <h1 class="header__text-heading">Hello!!!<br>We Are Creative<br>Digital Agency.</h1>
+      <p class="header__text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa id
+        praesentium hic mollitia nobis soluta magni voluptatem vero.</p>
+      <button class="btn header__text-btn">SEND MESSAGE</button>
+    </div>
+    <div class="header__img">
+      <img src="../dist/img/hero-m.jpg" alt="">
+      <!-- <img src="../dist/img/hero-m.jpg" alt="building" width="570"> -->
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <h2 class="portfolio__heading">WORK SHOWCASE.</h2>
+    <ul class="portfolio__nav">
+      <li><button class="btn portfolio__nav-btn portfolio__nav-btn--active">ALL</button></li>
+      <li><button class="btn portfolio__nav-btn portfolio__nav-btn--inactive">BRANDING</button></li>
+      <li><button class="btn portfolio__nav-btn portfolio__nav-btn--inactive">ILLUSTRATION</button></li>
+      <li><button class="btn portfolio__nav-btn portfolio__nav-btn--inactive">WEB</button></li>
+      <li><button class="btn portfolio__nav-btn portfolio__nav-btn--inactive newest-first-btn">NEWEST FIRST
+          <span class="arrow-down">^</span></button>
+      </li>
+    </ul>
+    <div class="portfolio-gallery">
+      <div class="portfolio-gallery-item-1"><img src="../dist/img/gallery-item1.webp" alt="portfolio example 1"></div>
+      <div class="portfolio-gallery-item-2"><img src="../dist/img/gallery-item2.webp" alt="portfolio example 2"></div>
+      <div class="portfolio-gallery-item-3"><img src="../dist/img/gallery-item3.webp" alt="portfolio example 3"></div>
+      <div class="portfolio-gallery-item-4"><img src="../dist/img/gallery-item4.webp" alt="portfolio example 4"></div>
+      <div class="portfolio-gallery-item-5"><img src="../dist/img/gallery-item5.webp" alt="portfolio example 5"></div>
+      <div class="portfolio-gallery-item-6"><img src="../dist/img/gallery-item6.webp" alt="portfolio example 6"></div>
+    </div>
+    <div class="portfolio__show-me-more">
+      <button class="btn portfolio__show-me-more-btn">SHOW ME MORE</button>
+    </div>
+  </section>
+  <section class="partners-container">
+    <div class="partners">
+      <img src="../dist/img/partners-1.webp" width="140" height="110" alt="partner 1 logo">
+      <img src="../dist/img/partners-2.webp" width="140" height="110" alt="partner 2 logo">
+      <img src="../dist/img/partners-3.webp" width="140" height="110" alt="partner 3 logo">
+      <img src="../dist/img/partners-4.webp" width="140" height="110" alt="partner 4 logo">
+      <img src="../dist/img/partners-5.webp" width="140" height="110" alt="partner 5 logo">
+      <img src="../dist/img/partners-6.webp" width="140" height="110" alt="partner 6 logo">
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h2 class="about__heading">ABOUT US.</h2>
+    <div class="about__text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus delectus non sunt
+        dolore libero dolor praesentium ab. Repellendus, nobis veniam!</p>
+    </div>
+    <div class="about-gallery">
+      <div class="about-gallery__item team-member-card">
+        <!-- <img src="../dist/img/team-member-1.webp" alt="team member"> -->
+        <div class="team-member-card__info">
+          <h3>Luke Skywalker</h3>
+          <p>Web Designer</p>
+        </div>
+      </div>
+      <div class="about-gallery__item team-member-card">
+        <!-- <img src="../dist/img/team-member-2.webp" alt="team member"> -->
+        <div class="team-member-card__info">
+          <h3>Luke Skywalker</h3>
+          <p>Web Designer</p>
+        </div>
+      </div>
+      <div class="about-gallery__item about-info">
+        <h3 class="about-info__heading">Little About Us</h3>
+        <p class="about-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident
+          doloremque minima ipsam ullam
+          similique vero, laborum itaque.</p>
+        <button class="btn about-info__read-more-btn">Read More</button>
+      </div>
+    </div>
+  </section>
+  <section class="blog-container" id="blog">
+    <div class="blog">
+      <h2 class="blog__heading">OUR BLOG.</h2>
+      <div class="blog__text">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, hic? Ipsam hic, nesciunt
+          magnam perferendis quibusdam enim. Ratione, minus sequi!</p>
+      </div>
+      <div class="blog__grid">
+        <div class="blog-article">
+          <img src="../dist/img/blog-1.webp" alt="" class="blog-article__img">
+          <h3 class="blog-article__heading">SUPER BLOG ARTICLE!</h3>
+          <p class="blog-article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum dolores
+            ab repudiandae.</p>
+          <p class="blog-article__date">20 May 2020</p>
+        </div>
+        <div class="blog-article">
+          <img src="../dist/img/blog-2.webp" alt="" class="blog-article__img">
+          <h3 class="blog-article__heading">SUPER BLOG ARTICLE!</h3>
+          <p class="blog-article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum dolores
+            ab repudiandae.</p>
+          <p class="blog-article__date">20 May 2020</p>
+        </div>
+        <div class="blog-article">
+          <img src="../dist/img/blog-3.webp" alt="" class="blog-article__img">
+          <h3 class="blog-article__heading">SUPER BLOG ARTICLE!</h3>
+          <p class="blog-article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum dolores
+            ab repudiandae.</p>
+          <p class="blog-article__date">20 May 2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="contact__heading">CONTACT US.</h2>
+    <div class="contact__text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi enim maxime blanditiis
+        possimus, aperiam soluta fugit rerum tenetur nisi quae!</p>
+    </div>
+    <div class="contact__form-container">
+      <form action="/" method="POST" class="contact-form">
+        <h3 class="contact-form__heading">Send Us Message.</h3>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Email">
+        <!-- <input type="text" name="msg" id="" required placeholder="Message"> -->
+        <label for="message">Message</label>
+        <textarea class="contact-form__textarea" name="message" id="message" rows="6" required
+          placeholder="Message"></textarea>
+        <!-- <textarea name="msg" id="message" cols="30" rows="10" required placeholder="Message"></textarea> -->
+        <button class="btn contact-form__send-msg-btn">SEND MESSAGE</button>
+      </form>
+      <div class="contact__img">
+        <img src="../dist/img/modern-building-facade.webp" alt="">
+      </div>
+    </div>
+    <div class="contact__info">
+      <div class="contact__info-address">
+        <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+        <p>1211 Awesome Avenue,</p>
+        <p> NY USD</p>
+      </div>
+      <div class="contact__info-telephone">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <p>+00123 - 456 -78</p>
+        <p>+00123 - 456 -78</p>
+      </div>
+      <div class="contact__info-email">
+        <i class="fa fa-desktop" aria-hidden="true"></i><br>
+        <a href="mailto:mint@mintmail.com">mint@mintmail.com</a>
+      </div>
+    </div>
+    <div class="contact__social-media">
+      <a href="#" class="contact__social-media-facebook"><span hidden>facebook</span><i class="fa fa-facebook"
+          aria-hidden="true"></i>
+      </a>
+      <a href="#" class="contact__social-media-tweeter"><i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="contact__social-media-dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+  <footer class="footer-container">
+    <div class="footer">
+      <a href="#">
+        <img class="footer__logo" src="../dist/img/logo-grey.png" alt="Mint logo" width="90" height="53">
+      </a>
+      <div class="footer__text">
+        <p>&copy;2020 - Mint, All Right Reserved</p>
+      </div>
+      <a href="#" class="footer__back-to-top-link">
+        <div class="footer__back-to-top-link-container">
+          <p>BACK TO TOP</p>
+          <div class="arrow-up">^</div>
+        </div>
+      </a>
+    </div>
+  </footer>
+</body>
 
 </html>

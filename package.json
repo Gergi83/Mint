@@ -1,5 +1,5 @@
 {
-  "name": "Mint - PSD to code",
+  "name": "Mint",
   "version": "1.0.0",
   "description": "Mint - PSD to code",
   "main": "index.js",
@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1"
   }
 }

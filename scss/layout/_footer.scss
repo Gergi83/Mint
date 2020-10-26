@@ -1,0 +1,38 @@
+.footer-container {
+  height: 18rem;
+  background: #1e1e1e;
+  color: #fffafa;
+
+  .footer {
+    @include section-layout;
+    height: 18rem;
+    display: grid;
+    grid-template-columns: 9rem repeat(2, auto);
+    justify-items: start;
+    align-items: center;
+
+    &__text {
+      padding-left: 2.9rem;
+      padding-right: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    &__back-to-top-link {
+      justify-self: end;
+      max-width: 10rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      &-container {
+        display: flex;
+        align-items: center;
+
+        .arrow-up {
+          font-size: 1.3rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
