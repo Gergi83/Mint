@@ -289,7 +289,8 @@ textarea:focus {
       .about-gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "team-member-card-1 team-member-card-2" "about-info about-info"; } }
+        grid-template-areas: "team-member-card-1 team-member-card-2"
+ "about-info about-info"; } }
     @media (max-width: 37.5em) {
       .about-gallery {
         display: flex;
