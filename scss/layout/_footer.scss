@@ -11,11 +11,19 @@
     justify-items: start;
     align-items: center;
 
+    @media (max-width: 500px) {
+      display: flex;
+      justify-content: space-around;
+    }
+
     &__text {
-      padding-left: 2.9rem;
-      padding-right: 2rem;
+      padding: 0 2.9rem 0 2rem;
       font-size: 1.2rem;
       font-weight: 500;
+
+      @media (max-width: 500px) {
+        padding: 0 1rem;
+      }
     }
 
     &__back-to-top-link {
@@ -23,6 +31,10 @@
       max-width: 10rem;
       font-size: 1.2rem;
       font-weight: 500;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
 
       &-container {
         display: flex;
