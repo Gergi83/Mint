@@ -19,19 +19,19 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: .25s;
+  // transition: .25s;
 
-  &:hover,
-  &:focus {
-    background: gold;
-    color: #00e1ff;
-    outline-style: none;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: gold;
+  //   color: #00e1ff;
+  //   outline-style: none;
+  // }
 
-  &:active {
-    background: hotpink;
-    color: greenyellow;
-  }
+  // &:active {
+  //   background: hotpink;
+  //   color: greenyellow;
+  // }
 }
 
 ul {

@@ -3,7 +3,7 @@
   display: flex;
   padding: 11rem 1rem 0 1rem;
 
-  @include respond(phone) {  
+  @include respond(phone) {
     padding: 0 1rem 0 1rem;
     margin-bottom: 5rem;
   }
@@ -420,7 +420,7 @@
       max-width: 57rem;
 
       label {
-        display: none;
+        font-size: 0rem;
       }
 
       @include respond(tablet-portrait) {
@@ -533,6 +533,10 @@
     display: flex;
     justify-content: space-between;
     font-size: 2.4rem;
+
+    & > a > span {
+      font-size: 0rem;
+    }
 
     @include respond(phone) {
       padding-bottom: 6rem;

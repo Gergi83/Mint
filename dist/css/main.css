@@ -22,15 +22,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
-  transition: .25s; }
-  a:hover, a:focus {
-    background: gold;
-    color: #00e1ff;
-    outline-style: none; }
-  a:active {
-    background: hotpink;
-    color: greenyellow; }
+  text-decoration: none; }
 
 ul {
   list-style: none; }
@@ -508,7 +500,7 @@ textarea:focus {
     .contact__form-container .contact-form {
       max-width: 57rem; }
       .contact__form-container .contact-form label {
-        display: none; }
+        font-size: 0rem; }
       @media (max-width: 56.25em) {
         .contact__form-container .contact-form {
           margin: 0 auto; } }
@@ -586,6 +578,8 @@ textarea:focus {
     display: flex;
     justify-content: space-between;
     font-size: 2.4rem; }
+    .contact__social-media > a > span {
+      font-size: 0rem; }
     @media (max-width: 37.5em) {
       .contact__social-media {
         padding-bottom: 6rem; } }
