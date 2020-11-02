@@ -13,7 +13,7 @@
     padding-top: 7rem;
 
     @include respond(phone) {
-      padding-top: 3rem;
+      padding-top: 0;
     }
 
     &-heading {

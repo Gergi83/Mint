@@ -1,19 +1,19 @@
 .nav {
   @include section-layout;
-  min-height: 12.3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 17.2rem;
+  // min-height: 12.3rem;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
 
-  // @include respond(phone) {
-  // }
-
-  // &__logo {
-  // }
+  &__logo {
+    margin: 3.5rem 1.5rem;
+  }
 
   &__menu-container {
     width: 100%;
-    max-width: 45.5rem;
+    max-width: 45.5rem;  
+    float: right;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
