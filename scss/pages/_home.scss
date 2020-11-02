@@ -83,7 +83,7 @@
         background: $primary-color;
 
         &:hover {
-          background: greenyellow;
+          background: gold;
         }
       }
 
@@ -339,9 +339,6 @@
     }
 
     &__grid {
-      // display: flex;
-      // flex-direction: row;
-      // justify-content: space-between;
       display: grid;
       grid-template-columns: repeat(3, auto);
       gap: 3rem;
@@ -419,14 +416,6 @@
     .contact-form {
       max-width: 57rem;
 
-      label {
-        font-size: 0rem;
-      }
-
-      @include respond(tablet-portrait) {
-        margin: 0 auto;
-      }
-
       &__heading {
         font-size: 2.1rem;
         font-weight: 900;
@@ -436,13 +425,27 @@
         }
       }
 
-      &__textarea {
+      label {
+        font-size: 0rem;
+      }
+
+      input,
+      input:focus {
         width: 95%;
-        outline: none;
-        border: none;
         padding: 1.8rem;
         background-color: $background-color;
-        resize: none;
+
+        &::placeholder {
+          color: #000;
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+      }
+
+      &__textarea {
+        width: 95%;
+        padding: 1.8rem;
+        background-color: $background-color;
 
         @include respond(tablet-portrait) {
           width: 100%;
@@ -464,6 +467,10 @@
           margin: 1.2rem auto 0 auto;
           display: block;
         }
+      }
+
+      @include respond(tablet-portrait) {
+        margin: 0 auto;
       }
     }
 
@@ -506,7 +513,6 @@
     &-email i {
       margin-bottom: 3rem;
       font-size: 2.4rem;
-      // color: $primary-color;
 
       @include respond(phone) {
         margin: 0 2rem 0 2rem;

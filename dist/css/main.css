@@ -34,25 +34,9 @@ input,
 input:focus,
 textarea,
 textarea:focus {
-  width: 95%;
   outline: none;
   border: none;
-  padding: 1.8rem;
-  background-color: #fdfdfd;
   resize: none; }
-  @media (max-width: 56.25em) {
-    input,
-    input:focus,
-    textarea,
-    textarea:focus {
-      width: 100%; } }
-  input::placeholder,
-  input:focus::placeholder,
-  textarea::placeholder,
-  textarea:focus::placeholder {
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 700; }
 
 .btn {
   background: #ffe600;
@@ -254,7 +238,7 @@ textarea:focus {
       .portfolio__nav-btn--active {
         background: #ffe600; }
         .portfolio__nav-btn--active:hover {
-          background: greenyellow; }
+          background: gold; }
       .portfolio__nav-btn--inactive {
         background: inherit; }
         .portfolio__nav-btn--inactive:hover {
@@ -499,24 +483,28 @@ textarea:focus {
     display: flex; }
     .contact__form-container .contact-form {
       max-width: 57rem; }
-      .contact__form-container .contact-form label {
-        font-size: 0rem; }
-      @media (max-width: 56.25em) {
-        .contact__form-container .contact-form {
-          margin: 0 auto; } }
       .contact__form-container .contact-form__heading {
         font-size: 2.1rem;
         font-weight: 900; }
         @media (max-width: 56.25em) {
           .contact__form-container .contact-form__heading {
             text-align: center; } }
+      .contact__form-container .contact-form label {
+        font-size: 0rem; }
+      .contact__form-container .contact-form input,
+      .contact__form-container .contact-form input:focus {
+        width: 95%;
+        padding: 1.8rem;
+        background-color: #fdfdfd; }
+        .contact__form-container .contact-form input::placeholder,
+        .contact__form-container .contact-form input:focus::placeholder {
+          color: #000;
+          font-size: 1.2rem;
+          font-weight: 700; }
       .contact__form-container .contact-form__textarea {
         width: 95%;
-        outline: none;
-        border: none;
         padding: 1.8rem;
-        background-color: #fdfdfd;
-        resize: none; }
+        background-color: #fdfdfd; }
         @media (max-width: 56.25em) {
           .contact__form-container .contact-form__textarea {
             width: 100%; } }
@@ -532,6 +520,9 @@ textarea:focus {
           .contact__form-container .contact-form__send-msg-btn {
             margin: 1.2rem auto 0 auto;
             display: block; } }
+      @media (max-width: 56.25em) {
+        .contact__form-container .contact-form {
+          margin: 0 auto; } }
     @media (max-width: 56.25em) {
       .contact__form-container .contact__img {
         display: none; } }

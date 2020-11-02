@@ -33,20 +33,7 @@ input,
 input:focus,
 textarea,
 textarea:focus {
-  width: 95%;
   outline: none;
   border: none;
-  padding: 1.8rem;
-  background-color: $background-color;
   resize: none;
-
-  @include respond(tablet-portrait) {
-    width: 100%;
-  }
-
-  &::placeholder {
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
 }
