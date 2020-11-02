@@ -124,7 +124,7 @@ textarea:focus {
     .nav__menu-container .nav__menu-icon {
       padding: 2rem;
       cursor: pointer; }
-      @media (min-width: 37.5rem) {
+      @media (min-width: 601px) {
         .nav__menu-container .nav__menu-icon {
           display: none; } }
       .nav__menu-container .nav__menu-icon .nav__icon {
