@@ -351,7 +351,7 @@ textarea:focus {
       bottom: -35rem; }
       @media (max-width: 37.5em) {
         .about-gallery .team-member-card__info {
-          width: 33rem; } }
+          width: 32rem; } }
       .about-gallery .team-member-card__info h3 {
         font-size: 1.2rem;
         font-weight: 800;
@@ -365,10 +365,10 @@ textarea:focus {
         position: relative;
         top: 2.8rem; }
     .about-gallery .team-member-card:nth-child(1) {
-      background: url(../../dist/img/team-member-1.webp);
+      background: url(../img/team-member-1.webp);
       background-position: center; }
     .about-gallery .team-member-card:nth-child(2) {
-      background: url(../../dist/img/team-member-2.webp);
+      background: url(../img/team-member-2.webp);
       background-position: center; }
     .about-gallery .about-info__heading {
       padding-left: 6rem;
