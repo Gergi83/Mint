@@ -343,6 +343,9 @@ textarea:focus {
     .about-gallery__item {
       max-width: 37rem;
       height: 42rem; }
+    @media (max-width: 37.5em) {
+      .about-gallery .team-member-card {
+        width: 100%; } }
     .about-gallery .team-member-card__info {
       width: 67.5%;
       height: 7rem;
@@ -351,7 +354,7 @@ textarea:focus {
       bottom: -35rem; }
       @media (max-width: 37.5em) {
         .about-gallery .team-member-card__info {
-          width: 32rem; } }
+          width: 100%; } }
       .about-gallery .team-member-card__info h3 {
         font-size: 1.2rem;
         font-weight: 800;
